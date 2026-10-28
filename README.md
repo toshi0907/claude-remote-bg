@@ -11,7 +11,8 @@ git clone https://github.com/toshi0907/claude-remote-bg.git
 cd claude-remote-bg
 chmod +x claude-remote.sh
 
-# 作業ディレクトリを指定して起動 (省略時は $HOME)
+# 作業ディレクトリを作成し、指定して起動 (省略時は $HOME)
+mkdir -p "$HOME/projects"
 WORK_DIR="$HOME/projects" ./claude-remote.sh start
 
 # 状態確認・ログ表示
